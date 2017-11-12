@@ -1,0 +1,9 @@
+<label class="nameLabel">First, add candidates (at least three):</label>
+<input class="nameInput" placeholder="(name)" [(ngModel)]="candidateName" (keydown.enter)="addCandidate()">
+<input class="addButton" type="button" value="Add" (click)="addCandidate()">
+
+<ul>
+  <li *ngFor="let candidate of candidates">{{candidate}}</li>
+</ul>
+
+<input type="button" value="Done adding candidates" *ngIf="atLeastThreeCandidates" (click)="goToBallot()">
