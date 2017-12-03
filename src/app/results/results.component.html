@@ -1,3 +1,12 @@
-<p>
-  results works!
-</p>
+<h3>Results:</h3>
+
+<div id="tableContainer">
+  <div class="column candidatesColumn">
+    <div class="tableCell columnTitleCell">Candidates</div>
+    <div class="tableCell" *ngFor="let name of cService.sortedNames">{{name}}</div>
+  </div>
+  <div class="column voteColumn">
+    <div class="tableCell columnTitleCell">Votes</div>
+    <div class="tableCell" *ngFor="let number of cService.sortedNumbers">{{number}}</div>
+  </div>
+</div>
