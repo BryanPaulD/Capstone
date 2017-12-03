@@ -1,0 +1,28 @@
+
+#tableContainer
+{
+  width: 400px;
+  display: flex;
+}
+
+.candidatesColumn
+{
+  width: 175px;
+}
+.voteColumn
+{
+  border-right: 2px solid black;
+  width: 75px;
+}
+
+.tableCell
+{
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.columnTitleCell
+{
+  border-top: 2px solid black;
+  font-weight: bold;
+}
