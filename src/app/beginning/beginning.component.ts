@@ -10,10 +10,10 @@ import {Router} from "@angular/router";
 export class BeginningComponent {
 
   constructor(public cService: CandidatesService, private router: Router) {}
-
-  private candidateName = 'Javert';
+  
+  public candidateName = '';
   public candidates: string[] = [];
-  private atLeastThreeCandidates: boolean = false;
+  public atLeastThreeCandidates: boolean = false;
 
   addCandidate()
   {
